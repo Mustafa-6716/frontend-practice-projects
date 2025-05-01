@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Pakistan - Watch TV Shows Online, Watch Movies Online</title>
+
+    <!-- <meta name="viewport" content= "width=device-width, user-scalable=no"> -->
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"/>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <span><img src="assets/images/logo.svg" alt="logo" width="148" /></span>
+        <div class="sign_in_btn">
+          <button>Sign In</button>
+        </div>
+      </nav>
+      <div class="box"></div>
+
+      <div class="hero">
+        <span>Unlimited movies, TV shows, and more</span>
+        <span>Starts at Rs 250. Cancel anytime.</span>
+        <span
+          >Ready to watch? Enter your email to create or restart your
+          membership.</span
+        >
+
+        <div class="hero_buttons">
+          <input class="email" type="text" placeholder="Email address" />
+          <button class="btn_get_started">
+            <span>Get Started</span>
+            <span class="arrow"><i class="bx bx-chevron-right" style="color: #ffffff"></i></span>
+            
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="title">Trending Now</h2>
+    <div class="trending_container" id="trendingContainer">
+      <button class="scroll-btn left" onclick="scrollLeft()">&#10094;</button>
+      <div class="card">
+          <img src="assets/images/trending_card_image1.png" alt="Squid Game" />
+          <span class="rank">1</span>
+      </div>
+  
+      <div class="card">
+          <img src="assets/images/trending_card_image2.png" alt="Reliabetter Sim" />
+          <span class="rank">2</span>
+      </div>
+  
+      <div class="card">
+          <img src="assets/images/trending_card_image3.png" alt="Bopeta" />
+          <span class="rank">3</span>
+      </div>
+  
+      <div class="card">
+          <img src="assets/images/trending_card_image4.png" alt="Super The Light" />
+          <span class="rank">4</span>
+      </div>
+  
+      <div class="card">
+          <img src="assets/images/trending_card_image5.png" alt="Bridging 3" />
+          <span class="rank">5</span>
+      </div>
+  
+      <div class="card">
+          <img src="assets/images/trending_card_image6.png" alt="Light Agent" />
+          <span class="rank">6</span>
+      </div>
+      <button class="scroll-btn right" onclick="scrollRight()">&#10095;</button>
+  </div>
+
+    <div class="more">
+      <h1>More Reasons to Join</h1>
+      <div class="more_container">
+        <div class="more_card">
+          <span><h3>Enjoy on your TV</h3></span>
+          <span>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
+            Blu-ray players, and more.</span>
+
+            <div class="more_card_image"><img src="assets/images/more_card1.svg" alt="image"></div>
+        </div>
+
+        <div class="more_card">
+            <span><h3>Download your shows to watch offline</h3></span>
+            <span>Save your favorites easily and always have something to watch.</span>
+  
+              <div class="more_card_image"><img src="assets/images/more_card2.svg" alt="image"></div>
+          </div>
+
+          <div class="more_card">
+            <span><h3>Watch everywhere</h3></span>
+            <span>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</span>
+  
+              <div class="more_card_image"><img src="assets/images/more_card3.svg" alt="image"></div>
+          </div>
+
+          <div class="more_card">
+            <span><h3>Create profiles for kids</h3></span>
+            <span>Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</span>
+  
+              <div class="more_card_image"><img src="assets/images/more_card4.svg" alt="image"></div>
+          </div>
+
+        
+      </div>
+    </div>
+
+    <div class="faq">
+      <h1>Frequently Asked Questions</h1>
+      <div class="faq_container">
+        <div class="faq_card">
+          <span>What is Netflix?</span>
+         <span class="faq_card_image"><i class='bx bx-plus' style='color:#ffffff'  ></i></span>
+        </div>
+
+        <div class="faq_card">
+          <span>How much does Netflix Cost?</span>
+         <span class="faq_card_image"><i class='bx bx-plus' style='color:#ffffff'  ></i></span>
+        </div>
+
+        <div class="faq_card">
+          <span>Where Can I Watch?</span>
+         <span class="faq_card_image"><i class='bx bx-plus' style='color:#ffffff'  ></i></span>
+        </div>
+
+        <div class="faq_card">
+          <span>How do I Cancel?</span>
+         <span class="faq_card_image"><i class='bx bx-plus' style='color:#ffffff'  ></i></span>
+        </div>
+
+        <div class="faq_card">
+          <span>What can i watch on Netflix?</span>
+         <span class="faq_card_image"><i class='bx bx-plus' style='color:#ffffff'  ></i></span>
+        </div>
+
+        <div class="faq_card">
+          <span>Is Netflix good for kids?</span>
+         <span class="faq_card_image"><i class='bx bx-plus' style='color:#ffffff'  ></i></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom_registration">
+      <span>Ready to watch? Enter your email to create or restart your
+          membership.</span>
+
+        <div class="hero_buttons">
+          <input class="email" type="text" placeholder="Email address" />
+          <button class="btn_get_started">
+            Get Started
+            <span class="arrow"><i class="bx bx-chevron-right" style="color: #ffffff"></i></span>
+          </button>
+        </div>
+    </div>
+    
+    
+    
+    <footer>
+      <div class="questions">
+        Questions? Call 000-800-919-1694
+        <i class="fa-thin fa-language"></i>
+      </div>
+      <div class="footer">
+        <div class="footer-item"> 
+          <a href="faq">FAQ</a>
+          <a href="faq">Investor Relations</a>
+          <a href="faq">Privacy</a>
+          <a href="faq">Speed Test</a>
+          
+          <span class="language">
+            <button>
+             <span> <i class="fa-solid fa-language"></i></span>
+              <span>English</span></button>
+              </span>
+
+              <span>Netflix Pakistan</span>
+                
+            </div>
+
+            <div class="footer-item"> 
+                <a href="faq">Help Centre</a>
+                <a href="faq">Jobs</a>
+                <a href="faq">Cookie Preferences</a>
+                <a href="faq">Legal Notices</a>
+            </div>
+            <div class="footer-item">
+                <a href="faq">Account</a>
+                <a href="faq">Ways to Watch</a>
+                <a href="faq">Corporate Information</a> 
+                <a href="faq">Only on Netflix</a>
+            </div>
+
+            <div class="footer-item">
+                <a href="faq">Media Center</a>
+                <a href="faq">Terms of Use</a> 
+                <a href="faq">Contact Us</a> 
+                
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
