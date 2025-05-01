@@ -1,0 +1,19 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="outerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFB6C1"/>
+      <stop offset="100%" stop-color="#7D2AE8"/>
+    </radialGradient>
+    <radialGradient id="innerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFA07A"/>
+      <stop offset="100%" stop-color="#FF69B4"/>
+    </radialGradient>
+    <linearGradient id="arrowGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FF4500"/>
+      <stop offset="100%" stop-color="#8B008B"/>
+    </linearGradient>
+  </defs>
+  <circle cx="40" cy="40" r="36" fill="url(#outerGlow)" />
+  <circle cx="40" cy="40" r="30" fill="url(#innerGlow)" />
+  <path d="M40 22V50M30 40L40 50L50 40" stroke="url(#arrowGradient)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
